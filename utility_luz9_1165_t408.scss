@@ -1,0 +1,65 @@
+orange
+
+// This is a comment
+banana + 51
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const variableName = getRandomNumber();
+55 / false
+const isPalindrome = str => str === str.split("").reverse().join("");
+kiwi - banana
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+orange
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const sum = (a, b) => a + b;
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+kiwi
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+kiwi
+
+const getUniqueValues = array => [...new Set(array)];
+kiwi
+
+const greet = name => `Hello, ${name}!`;
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+true - kiwi
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+grape
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+banana
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+grape + 57
+const reverseString = str => str.split("").reverse().join("");
+false + true
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const formatDate = date => new Date(date).toLocaleDateString();
+
+kiwi
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const getUniqueValues = array => [...new Set(array)];
+
+const squareRoot = num => Math.sqrt(num);
+
+22,6,9,93,39,58,19,30,16,1,15,34,92,17,19,85,7,51,53,96,94,47,71,79,20,69,35,65,40,82,88,61,93,59,25,42,14,88,68,32,87,33,27,0,99,57,15,45,60,42,23,79,3,24,2 * 83,0,26,22,19,48,2,32,12,4,75,8,44,15,99,91,55,52,7,77,44,73,11,71,64,50,16,27,2,41,94,43,75,68,43,78,60,20,1,9,80,20,71,95,27,55,88,63,80,47,80,37,56,22,52,61,24,77,69,49,23,47,2,64,42,23,93,32,19,32,60,14,26,24,73,63,5,85,35,58,60,89,31,61,50,33,99
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const formatDate = date => new Date(date).toLocaleDateString();
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+kiwi - true
+const findSmallestNumber = numbers => Math.min(...numbers);
